@@ -6,7 +6,6 @@
 
         <section>
             <h2>Choose quiz you want to try</h2>
-
             <QuizList />
         </section>
     </div>
