@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1",
+    "title": "Vue Quiz",
+    "difficulty": "easy",
+    "questions": [
+      {
+        "question": "What is Vue.js?",
+        "answer": 0,
+        "options": [
+          "A framework for building user interfaces",
+          "an open-source project",
+          "Is a JavaScript library"
+        ]
+      },
+      {
+        "question": "What is VueX?",
+        "answer": 1,
+        "options": [
+          "A framework for building user interfaces",
+          "State managment library",
+          "Is a JavaScript library"
+        ]
+      },
+      {
+        "question": "What is Vue Router?",
+        "answer": 0,
+        "options": [
+          "Router for building user interfaces",
+          "State managment library",
+          "Quizez"
+        ]
+      }
+    ]
+  }
+]
