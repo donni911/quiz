@@ -105,6 +105,14 @@ const nextQuestion = () => {
         quizCompleted.value = true;
     }
 };
+
+watchEffect(() => {
+    if (quiz.value) {
+        useHead({
+            title: `Quiz | ${quiz.value.title}`,
+        });
+    }
+});
 </script>
 
 <style >

@@ -8,6 +8,7 @@
                 class="w-20 origin-top-left hover:rotate-3 transition-transform"
             />
         </NuxtLink>
+
         <ul class="flex items-center gap-10">
             <li
                 class="font-bold italic h-full flex hover:text-thover transition-colors items-center"
@@ -17,14 +18,14 @@
 
             <li class="font-bold italic h-full flex items-center">
                 <NuxtLink
-                    to="/profile/create-quiz"
+                    :to="`/profile/${user.id}`"
                     class="w-8 h-8 bg-white rounded-full"
                     ><img
                         class="rounded-full"
                         :src="
                             user
                                 ? user.identities[0].identity_data.avatar_url
-                                : '/img/logo.png'
+                                : '/img/user.png'
                         "
                         alt=""
                 /></NuxtLink>
@@ -39,3 +40,9 @@
 <script setup>
 const user = useSupabaseUser();
 </script>
+
+<style>
+.router-link-exact-active {
+    @apply text-thover;
+}
+</style>

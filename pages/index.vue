@@ -12,6 +12,10 @@
 </template>
 
 <script setup>
+const red = ref("red");
+useHead({
+    title: "Home | Quiz game",
+});
 definePageMeta({
     layout: "default",
 });

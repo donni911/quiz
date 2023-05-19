@@ -4,10 +4,9 @@ export default async (id) => {
   if (error.value) {
     throw createError({
       ...error.value,
-      statusMessage: "Unable to fetch car",
+      statusMessage: "Unable to fetch quiz",
     });
   }
-
 
   return { data };
 };
